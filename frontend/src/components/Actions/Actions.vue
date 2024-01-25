@@ -60,7 +60,7 @@ onMounted(async () => {
 })
 
 async function getActions() {
-  const raw = await axios.get('http://localhost:3000/actions');
+  const raw = await axios.get('https://assos-zbmf-igvhnnmta-flyard.vercel.app/actions');
   return await raw.data
 }
 
