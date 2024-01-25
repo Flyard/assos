@@ -65,7 +65,7 @@ async function getActions() {
 
 
 async function getAssos() {
-  const raw = await axios.get('https://assos-flyard.vercel.app//assos');
+  const raw = await axios.get('https://assos-flyard.vercel.app/assos');
   return await raw.data
 }
 
