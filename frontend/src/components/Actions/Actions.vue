@@ -59,13 +59,13 @@ onMounted(async () => {
 })
 
 async function getActions() {
-  const raw = await axios.get('https://assos.vercel.app/actions');
+  const raw = await axios.get('https://assos-flyard.vercel.app//actions');
   return await raw.data
 }
 
 
 async function getAssos() {
-  const raw = await axios.get('http://localhost:3000/assos');
+  const raw = await axios.get('https://assos-flyard.vercel.app//assos');
   return await raw.data
 }
 
