@@ -37,8 +37,7 @@ function getFilteredActions(arr) {
     return actions.value.filter((el) => {
       return arr.every(w => el.all_text.includes(w));
     });
-  }
-  else return actions.value
+  } else return actions.value
 }
 
 
@@ -60,7 +59,7 @@ onMounted(async () => {
 })
 
 async function getActions() {
-  const raw = await axios.get('https://assos-zbmf-igvhnnmta-flyard.vercel.app/actions');
+  const raw = await axios.get('https://assos.vercel.app/actions');
   return await raw.data
 }
 
