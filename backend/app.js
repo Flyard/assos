@@ -6,7 +6,7 @@ const port = 3000;
 const {assosController} = require("./Assos/assos.controller");
 const {actionsController} = require("./Actions/actions.controller");
 
-export const app = express();
+const app = express();
 app.use(cors({
     origin: '*'
 }))
