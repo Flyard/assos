@@ -11,7 +11,7 @@ import AutoComplete from "primevue/autocomplete";
 <template>
 <!--  <ActionList />-->
   <MainComponent/>
-  <div class="h-screen w-screen flex items-center justify-center flex-col">
+  <div class=" md:h-screen md:w-screen flex items-center justify-center flex-col">
     <h1 class="text-3xl font-bold">Les actions</h1>
     <Actions/>
   </div>

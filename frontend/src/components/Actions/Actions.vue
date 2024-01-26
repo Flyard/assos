@@ -6,7 +6,7 @@
     <DataView :value="getFilteredActions(autoCompleteValue)" paginator :rows="6">
       <template #list="slotProps">
         <div class="grid gap-10 grid-cols-12">
-          <div v-for="(item, index) in slotProps.items" :key="index" class="col-span-4">
+          <div v-for="(item, index) in slotProps.items" :key="index" class="col-span-12 md:col-span-4 lg:col-span-4">
             <ActionCard :titre="item.title" :image="getImage(item)" :description="item.summary" :url="item.url"/>
           </div>
         </div>
@@ -59,13 +59,13 @@ onMounted(async () => {
 })
 
 async function getActions() {
-  const raw = await axios.get('https://assos-flyard.vercel.app/actions');
+  const raw = await axios.get('https://assos.vercel.app/actions');
   return await raw.data
 }
 
 
 async function getAssos() {
-  const raw = await axios.get('https://assos-flyard.vercel.app/assos');
+  const raw = await axios.get('https://assos.vercel.app/assos');
   return await raw.data
 }
 

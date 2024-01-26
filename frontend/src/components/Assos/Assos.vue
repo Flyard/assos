@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-12">
-    <div v-for="asso in assos" class="col-span-4" >
+    <div v-for="asso in assos" class="md:col-span-4 col-span-12" >
       <AssosCard :title="asso.nom" :description="asso.activites" :image="asso.img" :site="asso.url" :donate="asso.donate_url"/>
     </div>
   </div>
